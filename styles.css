@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+    margin: auto;
+    background-color: hsl(244, 38%, 16%);
+    color: #ffffff;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    transform: translateY(100px);
+}
+
+.text-container {
+    width: 40%;
+    margin: auto;
+    padding-left: 3rem;
+}
+
+h2 {
+    font-family: Inter, sans-serifs;
+    font-size: 2rem;
+    width: 80%;
+}
+
+h2 span {
+    color: rgb(170, 94, 241);
+}
+
+.main-paragraph {
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.7);
+    width: 90%;
+    line-height: 1.5;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+    width: 80%;
+}
+
+.stats p {
+    font-family: Inter, sans-serif;
+    font-size: 20px; 
+    font-weight: 700;
+}
+
+.stats span {
+    font-family: Inter, sans-serif;
+    color: hsla(0, 0%, 100%, 0.7);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.image-container {
+    background:url('images/image-header-desktop.jpg');
+    background-size: cover;
+    position: relative;
+    width: 50%;
+    height: 500px;
+    border-radius: 0 5px 5px 0;
+}
+
+.img-overlay {
+    background-color: rgba(33, 2, 62, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.attribution {
+    transform: translateY(100px);
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: Lexend Deca, sans-serif;
+}
+
+.attribution a { 
+    color: rgb(170, 94, 241); 
+    text-decoration: none;
+}
+
+
+/* Mobile Design */
+
+@media screen and (max-width: 415px) {
+    
+    body {
+        text-align: center;
+    }
+
+    .container {
+        width: 90vw;
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 5px;
+        transform: translateY(50px)
+    }
+
+    .image-container {
+        background:url('images/image-header-mobile.jpg');
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        height: 200px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .text-container {
+        width: 98%;
+        margin: 2rem;
+        padding-left: 0;
+        
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        width: 80%;
+    }
+    
+    .main-paragraph {
+        font-size: 16px;
+        width: 85%;
+        
+    }
+    
+    .stats {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+    }
+    
+    .attribution {
+        transform: translateY(50px);
+        font-size: 14px;
+    }
+}
